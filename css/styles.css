@@ -13,6 +13,7 @@ body {
 a {
   color: rgb(51, 6, 71);
   font-weight: bold;
+  text-align: center;
 }
 
 p {
@@ -135,4 +136,18 @@ section {
   width: 500px;
   height: auto;
   padding: 20px;
+}
+
+.img-thumbnail {
+
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-style: none;
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
+  image-rendering: crisp-edges;
+
 }

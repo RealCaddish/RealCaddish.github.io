@@ -1,19 +1,20 @@
-/*!
- * Start Bootstrap - Heroic Features (https://startbootstrap.com/template-overviews/heroic-features)
- * Copyright 2013-2017 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-heroic-features/blob/master/LICENSE)
- */
 
 body {
   font-family: 'Tajawal', sans-serif;
   background-color: #ffffff;
-  /* apply custom rules to the body here */
 }
 
 a {
   color: rgb(51, 6, 71);
   font-weight: bold;
   text-align: center;
+}
+
+header {
+  padding: 20px 0 200px;
+  background-color: #dcdee0;
+  background: linear-gradient(45deg, rgba(39, 43, 48, 0.8) 0%, rgba(197, 209, 223, 0) 100%), url('../images/background3.jpg');
+  width: auto;
 }
 
 p {
@@ -25,7 +26,10 @@ p {
   margin: 5%;
   font-weight: lighter;
   text-indent: 10px;
+}
 
+section {
+  padding: 40px 0;
 }
 
 .menu-bar {
@@ -33,14 +37,6 @@ p {
   background-color: #ffffff;
   text-align: right;
   padding: 1%;
-}
-
-header {
-  padding: 20px 0 200px;
-  background-color: #dcdee0;
-  background: linear-gradient(45deg, rgba(39, 43, 48, 0.8) 0%, rgba(197, 209, 223, 0) 100%), url('../images/background3.jpg');
-  width: auto;
-
 }
 
 .bg-light {
@@ -68,6 +64,17 @@ h3 {
   margin: 1%;
 }
 
+img {
+  width: 50%;
+  height: auto;
+  vertical-align: middle;
+  border-style: none;
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
+  image-rendering: crisp-edges;
+}
 
 col {
   background-color: #0b223b;
@@ -90,30 +97,49 @@ col {
 
 .container {
   position: relative;
-  width: 50%;
+  width: 80%;
 }
 
+@media (max-width: 575.98px) {
+  body {
+    background-color: rgb(255, 255, 255);
+  }
+  img {
+    width: 100% !important;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    image-rendering: crisp-edges;
+  }
 
+  p {
+    font-family: 'Rubik', sans-serif;
+    color: rgb(99, 30, 30);
+    background-color: #e2d4d400;
+    text-align: left;
+    font-size: large;
+    font-weight: lighter;
+    text-indent: 3px;
+    width: 100%;
+  }
 
-@media (min-width: 576px) {}
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
 
-@media (min-width: 768px) {}
-
-@media (min-width: 992px) {}
-
-@media (min-width: 1200px) {}
-
-img {
-  width: 50%;
-  height: auto;
-  vertical-align: middle;
-  border-style: none;
-  border-top-style: none;
-  border-right-style: none;
-  border-bottom-style: none;
-  border-left-style: none;
-  image-rendering: crisp-edges;
+  .container {
+    position: relative;
+    width: 90%;
+  }
 }
+
 
 .image {
   display:flexbox;
@@ -126,7 +152,7 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 100%;
 }
 
 .img-fluid {
@@ -138,11 +164,6 @@ img {
 .portfolio-item {
   margin-bottom: 30px;
 }
-
-section {
-  padding: 40px 0;
-}
-
 
 .resize {
   width: 500px;
